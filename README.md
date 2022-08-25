@@ -53,6 +53,9 @@ Performance on **ogbl-collab** (10 runs):
 
 ## Reference
 [1] https://github.com/snap-stanford/ogb/tree/master/examples/linkproppred/vessel
+
 [2] https://github.com/zhitao-wang/PLNLP
+
 [3] https://github.com/omri1348/LRGA
+
 
