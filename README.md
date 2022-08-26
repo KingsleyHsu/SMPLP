@@ -41,6 +41,9 @@ Performance on **ogbl-vessel** (10 runs):
 | SGC (3-layers) |  54.31 ± 23.79 | 54.33 ± 23.89  |
 | SGC (3-layers w/o normalize) |  50.09 ± 0.11 | 50.10 ± 0.11  |
 
+```{bash}
+python gnn.py --encoder='sgc' --decoder='mlp' --hidden_channels=16 --device=1  --lr=1e-6  --num_layers=3   --epochs=80
+```
 
 ### ogbl-collab
 

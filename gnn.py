@@ -284,10 +284,10 @@ def main():
                     f'Test: {test_roc_auc:.7f}')
                 train_roc_auc_list.append(train_roc_auc)
                 valid_roc_auc_list.append(valid_roc_auc)
-            if epoch>3 and (valid_roc_auc_list[epoch-1]- valid_roc_auc_list[epoch-2])<1e-6 and valid_roc_auc_list[epoch-1]- valid_roc_auc_list[epoch-3]<1e-6:
-                print('reset parameters')
-                model.reset_parameters()
-                predictor.reset_parameters()
+            # if epoch>3 and (valid_roc_auc_list[epoch-1]- valid_roc_auc_list[epoch-2])<1e-6 and valid_roc_auc_list[epoch-1]- valid_roc_auc_list[epoch-3]<1e-6:
+            #     print('reset parameters')
+            #     model.reset_parameters()
+            #     predictor.reset_parameters()
         print('GNN')
         logger.print_statistics(run)
 
