@@ -35,7 +35,7 @@ The dataset [ogbl-collab](https://ogb.stanford.edu/docs/linkprop/#ogbl-collab) c
 Performance on **ogbl-vessel** (10 runs):
 
 | Methods   | Test Acc  | Valid Acc  | Hardware|
-|  :----  | ---- | ---- |
+|  :----  | ---- | ---- | ---- |
 | TAGConv (1-layers) |  51.19 ± 1.74| 51.20 ± 1.75  |Tesla A100(80GB)|
 | LRGA (1-layers) |  54.15 ± 4.37 | 54.18 ± 4.39  |Tesla A100(80GB)|
 | SGC (3-layers) |  54.31 ± 23.79 | 54.33 ± 23.89  |Tesla V100(32GB)|
