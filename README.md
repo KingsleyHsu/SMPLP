@@ -34,12 +34,12 @@ The dataset [ogbl-collab](https://ogb.stanford.edu/docs/linkprop/#ogbl-collab) c
 ## Results on OGB Challenges
 Performance on **ogbl-vessel** (10 runs):
 
-| Methods   | Test Acc  | Valid Acc  |
+| Methods   | Test Acc  | Valid Acc  | Hardware|
 |  :----  | ---- | ---- |
-| TAGConv (1-layers) |  OOM | OOM  |
-| LRGA (1-layers) |  OOM | OOM  |
-| SGC (3-layers) |  54.31 ± 23.79 | 54.33 ± 23.89  |
-| SGC (3-layers w/o normalize) |  50.09 ± 0.11 | 50.10 ± 0.11  |
+| TAGConv (1-layers) |  51.19 ± 1.74| 51.20 ± 1.75  |Tesla A100(80GB)|
+| LRGA (1-layers) |  54.15 ± 4.37 | 54.18 ± 4.39  |Tesla A100(80GB)|
+| SGC (3-layers) |  54.31 ± 23.79 | 54.33 ± 23.89  |Tesla V100(32GB)|
+| SGC (3-layers w/o normalize) |  50.09 ± 0.11 | 50.10 ± 0.11  |Tesla V100(32GB)|
 
 ```{bash}
 python gnn.py --encoder='sgc' --decoder='mlp' --hidden_channels=16 --device=1  --lr=1e-6  --num_layers=3   --epochs=80
